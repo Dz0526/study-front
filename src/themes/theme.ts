@@ -1,5 +1,40 @@
 import { extendTheme } from '@chakra-ui/react';
-import { Button } from './Button';
+import { Button, Input } from '.';
+
+export type Color =
+  | 'black'
+  | 'white'
+  | 'brand'
+  | 'subBrand'
+  | 'link'
+  | 'warning'
+  | 'danger'
+  | 'gray.100'
+  | 'gray.300'
+  | 'gray.500';
+
+export type Space =
+  | 'x3s'
+  | 'xxs'
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | 'xxl'
+  | 'x3l';
+
+export type FontSize =
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | 'xxl'
+  | 'x3l'
+  | 'x4l'
+  | 'x5l'
+  | 'x6l';
 
 export const theme = extendTheme({
   colors: {
@@ -43,5 +78,6 @@ export const theme = extendTheme({
   },
   components: {
     Button,
+    Input,
   },
 });
