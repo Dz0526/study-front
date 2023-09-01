@@ -1,5 +1,5 @@
 import { extendTheme } from '@chakra-ui/react';
-import { Button, Input, Avatar } from '.';
+import { Button, Input, Avatar, Menu } from '.';
 
 export type Color =
   | 'black'
@@ -80,5 +80,6 @@ export const theme = extendTheme({
     Button,
     Input,
     Avatar,
+    Menu,
   },
 });
