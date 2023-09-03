@@ -6,6 +6,7 @@ export const Button = defineStyleConfig({
     gap: '10px',
     py: 'xs',
     fontSize: 'md',
+    fontWeight: '600',
   },
 
   sizes: {
@@ -37,6 +38,9 @@ export const Button = defineStyleConfig({
     incomplete: {
       bg: 'gray.300',
       color: 'white',
+      _hover: {
+        cursor: 'not-allowed',
+      },
     },
     danger: {
       bg: 'danger',

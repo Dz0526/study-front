@@ -36,7 +36,7 @@ export const Input = helpers.defineMultiStyleConfig({
     },
   },
   defaultProps: {
-    size: 'md',
+    size: 'lg',
     variant: 'brand',
   },
 });
