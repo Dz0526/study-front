@@ -8,10 +8,22 @@ import {
   MenuItem,
   MenuList,
 } from 'components/Elements/Menu';
+import { MainLayout } from 'components/Layout/MainLayout';
+import { UserProfilePreview } from 'features/user/components/UserProfilePreview';
 
 const Home: NextPage = () => {
   return (
-    <>
+    <MainLayout>
+      <UserProfilePreview
+        name='Taichi Okuda'
+        description='つれづれなるまゝに、日暮らし、硯にむかひて、心にうつりゆくよしなし事を、そこはかとなく書きつくれば、あやしうこそものぐるほしけれ。（Wikipediaより）'
+        link={{
+          twitter: 'https://twitter.com',
+          facebook: 'https://facebook.com',
+          instagram: '',
+          youtube: '',
+        }}
+      />
       <Button variant='danger' size='lg'>
         aiueo
       </Button>
@@ -49,7 +61,7 @@ const Home: NextPage = () => {
           <MenuItem>kami</MenuItem>
         </MenuList>
       </Menu>
-    </>
+    </MainLayout>
   );
 };
 
