@@ -5,7 +5,10 @@ import { theme } from 'themes/theme';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider
+      theme={theme}
+      toastOptions={{ defaultOptions: { position: 'top-right' } }}
+    >
       <Component {...pageProps} />
     </ChakraProvider>
   );
