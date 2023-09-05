@@ -10,8 +10,8 @@ import { ReactElement } from 'react';
 
 // label ?
 export type InputProps = {
-  errorMessage?: string;
-  type?: 'text' | 'email' | 'password';
+  errormessage?: string;
+  type?: 'text' | 'email' | 'password' | 'file';
   suffix?: ReactElement;
 } & Omit<CInputProps, 'type'>;
 
@@ -22,9 +22,9 @@ export const Input = forwardRef<InputProps, 'input'>((props, ref) => {
         <CInput {...props} ref={ref} />
         <InputRightElement>{props.suffix && props.suffix}</InputRightElement>
       </InputGroup>
-      {props.errorMessage && (
+      {props.errormessage && (
         <Text color='danger' fontSize='md'>
-          {props.errorMessage}
+          {props.errormessage}
         </Text>
       )}
     </>

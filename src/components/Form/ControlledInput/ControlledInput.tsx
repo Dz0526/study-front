@@ -34,7 +34,7 @@ export const ControlledInput = <T extends FieldValues>({
         onBlur={field.onBlur}
         ref={field.ref}
         value={field.value}
-        errorMessage={errorMessage}
+        errormessage={errorMessage}
         {...rest}
       />
     </FormControl>

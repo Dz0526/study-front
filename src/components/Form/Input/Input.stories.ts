@@ -21,7 +21,7 @@ export const Placeholder: Story = {
 };
 
 export const ErrorMessage: Story = {
-  args: { errorMessage: 'Error' },
+  args: { errormessage: 'Error' },
 };
 
 // suffix
